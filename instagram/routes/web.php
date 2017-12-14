@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/instagram-gallery', 'InstagramController@showAll');
+Route::get('/tweets', 'TwitterController@showAll');
+Route::get('/tweet-count', 'TwitterController@count');
+Route::get('/exclude', 'TwitterController@exclude');
+Route::get('/tweet-form', 'TwitterController@tweetForm');
